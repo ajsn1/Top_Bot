@@ -23,8 +23,10 @@ async def on_message(message):
         await message.channel.send("\U0001f642")
     elif message.content.startswith('$check'):
         await message.channel.send("test")
+    #TODO : add new command function
     else:
         await message.channel.send("Password kamu"+gen_pass(10))
 
 client.run(settings["TOKEN"])
+
 
